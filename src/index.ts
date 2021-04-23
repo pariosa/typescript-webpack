@@ -8,4 +8,7 @@ form.addEventListener('submit', (e) => {
   console.log(data);
 });
 
-console.log("test2sds");
+const person: any = {};
+person.speak;
+console.log(person.speak);
+console.log("hello")
