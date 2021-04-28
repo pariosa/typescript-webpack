@@ -11,11 +11,16 @@ module.exports = {
         test: /\.ts$/,
         include: [path.resolve(__dirname, 'src')],
         use: 'ts-loader',
+      },
+      {
+        test: /\.tsx$/,
+        include: [path.resolve(__dirname, 'src')],
+        use: 'ts-loader',
       }
     ]
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js', '.tsx'],
   }, 
   devServer: {
     publicPath: "/",

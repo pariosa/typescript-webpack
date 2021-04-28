@@ -1,5 +1,6 @@
 import { formData } from './forms';
 import example from './example';
+import typesExample from './TypesExample';
 
 const form = document.querySelector('form')!;
 
@@ -15,3 +16,5 @@ console.log(person.speak);
 console.log("hello")
 
 example();
+
+typesExample();

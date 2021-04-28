@@ -53,20 +53,4 @@ export default function example(){
     }*/
 
 
-    //explicit types
-    let character: string;
-    let age: number;
-    let isLoggedIn: boolean;
-
-    //arrays
-    let ninjas: string[];
-
-    //dissallowed, cannot use before definition
-    //ninjas.push('billy');
-
-    //allowed 
-    ninjas = ["yashi", "mario"]
-
-    //disallowed
-    //ninjas = [{name:"mark",age:12}];
 }
