@@ -1,7 +1,7 @@
 export const formData = (form) => {
     const inputs = form.querySelectorAll('input');
     let values = {};
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
         values[input.id] = input.value;
     });
     return values;

@@ -3,13 +3,13 @@ export default function example() {
     names.push('toad');
     let numbers = [10, 20, 30];
     numbers.push(25);
-    let mixed = ['ryu', 'ken', 11, 12,];
+    let mixed = ['ryu', 'ken', 11, 12];
     //it still has to be an array, but the values are anything
     //the basic type cannoy be recast
     //mixed = 'test'
     //this isnt allowed since theres no objects in the array
     //mixed.push({guy:'shrek'});
-    //these are all allowed 
+    //these are all allowed
     //since declared array has mixed types
     mixed.push('shrek');
     mixed.push(13);
@@ -19,27 +19,73 @@ export default function example() {
     // numbers.push('warios');
     let person = {
         age: 31,
-        name: "peter",
+        name: 'peter',
         job: {
-            title: "engineer"
-        }
+            title: 'engineer',
+        },
     };
     //allowed
     person = {
         age: 21,
-        name: "shrek",
+        name: 'shrek',
         job: {
-            title: "swampman"
-        }
+            title: 'swampman',
+        },
     };
     //disallowed
     /*
-    person = {
-        age:10,
-        name:"person",
-        job:{
-            title:undefined
+      person = {
+          age:10,
+          name:"person",
+          job:{
+              title:undefined
+          }
+      }*/
+    // Functions
+    let greet;
+    greet = () => {
+        console.log('Absdasconffdfs');
+    };
+    const add = (a, b, c = 11) => {
+        console.log(a + b);
+        console.log(c);
+    };
+    add(3, 4, 11);
+    const minus = (a, b) => {
+        return a - b;
+    };
+    let result = minus(10, 7);
+    console.log(result);
+    const logDetails = (uid, item) => {
+        console.log(`${item} has a uid of ${uid}`);
+    };
+    const greetMe = (user) => {
+        console.log(`${user.name} says hello`);
+    };
+    // Function types and typing
+    //let greet: Function;
+    // example 1
+    let greet2;
+    greet2 = (name, greeting) => {
+        console.log(`${name} says ${greeting}`);
+    };
+    greet2('jerry', 'hello');
+    // example2
+    let calc;
+    calc = (numOne, numTwo, action) => {
+        if (action === 'add') {
+            return numOne + numTwo;
         }
-    }*/
+        else {
+            return numOne - numTwo;
+        }
+    };
+    console.log(calc(10, 3, 'subtract'));
+    // example3
+    let logDetailsTwo;
+    logDetailsTwo = (ninja) => {
+        console.log(`${ninja.name} is ${ninja.age} years old`);
+    };
+    logDetailsTwo({ name: 'peter', age: 21 });
 }
 //# sourceMappingURL=example.js.map

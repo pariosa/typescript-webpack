@@ -8,24 +8,24 @@ export default function TypesExample() {
     //dissallowed, cannot use before definition
     //ninjas.push('billy');
     //allowed
-    ninjas = ["yashi", "mario"];
+    ninjas = ['yashi', 'mario'];
     //disallowed
-    //ninjas = [{name:"mark",age:12}];
+    // ninjas = [{name:"mark",age:12}];
     let mixed = [];
     mixed.push(false);
-    mixed.push("test");
+    mixed.push('test');
     mixed.push(21);
     console.log(mixed);
     let uid;
     uid = 123;
     let myObject;
-    myObject = { test: "123", test2: 1234 };
+    myObject = { test: '123', test2: 1234 };
     let ninja;
-    ninja = { name: "bernie", age: 78, beltColor: "black" };
+    ninja = { name: 'bernie', age: 78, beltColor: 'black' };
     let mixed2 = [];
     mixed2.push(3);
-    mixed2.push("marios");
-    mixed2.push({ name: "luigi" });
+    mixed2.push('marios');
+    mixed2.push({ name: 'luigi' });
     console.log(mixed2);
 }
 //

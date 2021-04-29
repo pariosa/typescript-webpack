@@ -1,5 +1,6 @@
-import { formData } from './forms';
 import example from './example';
+import { formData } from './forms';
+import main from './sandbox';
 import typesExample from './TypesExample';
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
@@ -9,8 +10,7 @@ form.addEventListener('submit', (e) => {
 });
 const person = {};
 person.speak;
-console.log(person.speak);
-console.log("hello");
 example();
 typesExample();
+main();
 //# sourceMappingURL=index.js.map
